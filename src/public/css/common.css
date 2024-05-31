@@ -1,0 +1,87 @@
+.header{
+    background-color: #fff;
+}
+
+.header__inner{
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1% 5% ;
+}
+.header__logo{
+    width: 30%;
+    vertical-align: middle;
+}
+.header__logo a{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__button{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 60%;
+
+}
+
+.header__button a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin-right: 10%;
+}
+
+.header__logout{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header__logout button{
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0;
+}
+
+
+main{
+    background-color: #f2f2f2;
+    height: 85vh;
+}
+body{
+    font-family: "游ゴシック体",
+            YuGothic,
+            "游ゴシック Medium",
+            "Yu Gothic Medium",
+            "游ゴシック",
+            "Yu Gothic",
+            sans-serif;
+}
+
+
+.footer{
+    background-color: #fff;
+}
+.footer__inner{
+    max-width: 1230px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px){
+
+
+}
+
+@media screen and(max-width: 480px){
+    
+}

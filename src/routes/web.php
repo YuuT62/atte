@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
+use App\Http\Controllers\RestController;
+use App\Http\Controllers\AttendanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware('auth')->group(function () {
+    Route::get('/', [JobController::class, 'index']);
+    Route::post('/start', [JobController::class, 'start']);
+    Route::post('/end', [JobController::class, 'end']);
+    Route::post('/rest/start', [RestController::class, 'start']);
+    Route::post('/rest/end', [RestController::class, 'end']);
+    Route::get('/attendance',[AttendanceController::class, 'attendance']);
+    Route::get('/attendance/yesterday',[AttendanceController::class, 'yesterday']);
+    Route::post('/attendance/tomorrow',[AttendanceController::class, 'tomorrow']);
 });

@@ -1,0 +1,116 @@
+.attendance-content {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.attendance-content__header {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendance-content__header form{
+    height: 22px;
+}
+
+.attendance-content__header-button{
+    border: 1px solid blue;
+    background-color: #fff;
+    color: blue;
+    font-weight: bold;
+    padding: 3px 10px;
+    margin: 0 40px;
+    height: 100%;
+    display: block;
+}
+
+.attendance-table {
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.attendance-table__inner{
+    width: 100%;
+}
+
+.attendance-table__row{
+    border-top: 2px solid #ddd;
+}
+
+.attendance-table__header{
+    width: 20%;
+    padding: 15px;
+    padding-left: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.attendance-table__item{
+    width: 20%;
+    padding: 15px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+
+
+
+/* ↓ paginationのスタイル ↓ */
+.attendance__page{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.paginationWrap {
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.pagination-table {
+    border-collapse: collapse;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #F6F5F5;
+}
+
+.paginationWrap tr.pagination td {
+    border-right: 1px solid #F6F5F5;
+}
+
+.paginationWrap tr.pagination td:last-child {
+    border: none;
+}
+
+.paginationWrap tr.pagination td a {
+    display: block;
+    text-decoration: none;
+    width: 105%;
+    height: 107%;
+    padding: 4px 13px;
+    color: #2484cf;
+}
+
+.paginationWrap tr.pagination td a.active {
+    background-color: #2484cf;
+    color: white;
+}
+
+.pagination-transition{
+    font-size: 7px;
+}
+
+/* ↑ paginationのスタイル ↑ */
