@@ -24,6 +24,12 @@ class Rest extends Model
         }
     }
 
+    public function scopeRestSearch($query, $id){
+        if(!empty($id)){
+            $query->where('id', $id);
+        }
+    }
+
     // public function total($job_id){
     //     if(!empty($job_id)){
     //         $rests=$this->where('job_id', $job_id);

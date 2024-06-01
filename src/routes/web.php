@@ -24,5 +24,5 @@ Route::middleware('auth')->group(function () {
     Route::post('/rest/end', [RestController::class, 'end']);
     Route::get('/attendance',[AttendanceController::class, 'attendance']);
     Route::get('/attendance/yesterday',[AttendanceController::class, 'yesterday']);
-    Route::post('/attendance/tomorrow',[AttendanceController::class, 'tomorrow']);
+    Route::get('/attendance/tomorrow',[AttendanceController::class, 'tomorrow']);
 });

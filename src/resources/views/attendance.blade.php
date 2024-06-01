@@ -13,7 +13,7 @@
             <button class="attendance-content__header-button"><</button>
         </form>
         <span>{{ $date }}</span>
-        <form action="/attendance/tomorrow" method="post">
+        <form action="/attendance/tomorrow" method="get">
             @csrf
             <input type="hidden" name="date" value="{{ $date }}">
             <button class="attendance-content__header-button">></button>
