@@ -21,6 +21,13 @@
             <div class="header__button">
                 <a href="/">ホーム</a>
                 <a href="/attendance">日付一覧</a>
+                <a href="/attendance/user_list">ユーザー一覧</a>
+                <form class="header__logout" action="/attendance/user" method="get">
+                    @csrf
+                    <input type="hidden" name="user_id" value="{{ auth::user()->id }}">
+                    <input type="hidden" name="user_name" value="{{ auth::user()->name }}">
+                    <button>ユーザー勤怠一覧</button>
+                </form>
                 <form class="header__logout" action="/logout" method="post">
                     @csrf
                     <button>ログアウト</button>

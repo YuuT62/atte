@@ -26,7 +26,16 @@
     color: #5a5858;
     padding: 15px;
     width: 35%;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
+}
+
+.login-form__error {
+    width: 35%;
+    color: red;
+    margin: 0 auto 15px;
+    height: 35px;
+    text-align: left;
+    padding-left: 5px;
 }
 
 .register-form__button button {

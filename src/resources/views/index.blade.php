@@ -3,10 +3,35 @@
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 @endsection
 
 @section('content')
 <div class="index-content">
+    <div class="index-pop">
+        @if(isset($job_status) && $job_status['status'] == 1 && $job_status['start_job'] == new Carbon('now','Asia/Tokyo'))
+            <div class="job-pop job-pop__start">
+                勤務を開始しました
+            </div>
+        @endif
+        @if(isset($job_status) && $job_status['end_job'] == new Carbon('now','Asia/Tokyo'))
+            <div class="job-pop job-pop__end">
+                勤務を終了しました
+            </div>
+        @endif
+        @if(!empty($rest_status) && $rest_status['status'] == 1 && $rest_status['start_rest'] == new Carbon('now','Asia/Tokyo'))
+            <div class="rest-pop rest-pop__start">
+                休憩を開始しました
+            </div>
+        @endif
+        @if(!empty($rest_status) && $rest_status['end_rest'] == new Carbon('now','Asia/Tokyo'))
+            <div class="rest-pop rest-pop__end">
+                休憩を終了しました
+            </div>
+        @endif
+    </div>
     <div class="index-content__header">
         {{ Auth::user()->name }}さんお疲れ様です！
     </div>
@@ -82,5 +107,8 @@
         @endif
 
     </div>
+
 </div>
+
+
 @endsection

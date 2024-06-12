@@ -50,5 +50,6 @@
     <div class="attendance__page">
         {{ $jobs->appends(request()->input())->links('pagination::default') }}
     </div>
+
 </div>
 @endsection

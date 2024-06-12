@@ -16,7 +16,8 @@ use App\Http\Controllers\AttendanceController;
 |
 */
 
-Route::middleware('auth')->group(function () {
+// Route::get('/verify', [JobController::class, 'verify']);
+Route::middleware('verified')->group(function () {
     Route::get('/', [JobController::class, 'index']);
     Route::post('/start', [JobController::class, 'start']);
     Route::post('/end', [JobController::class, 'end']);
@@ -25,4 +26,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/attendance',[AttendanceController::class, 'attendance']);
     Route::get('/attendance/yesterday',[AttendanceController::class, 'yesterday']);
     Route::get('/attendance/tomorrow',[AttendanceController::class, 'tomorrow']);
+    Route::get('/attendance/user_list',[AttendanceController::class,'user_list']);
+    Route::get('/attendance/user',[AttendanceController::class,'user']);
+    Route::get('/attendance/user/last_month',[AttendanceController::class,'last_month']);
+    Route::get('/attendance/user/next_month',[AttendanceController::class,'next_month']);
+
 });

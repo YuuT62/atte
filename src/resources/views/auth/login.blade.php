@@ -14,8 +14,20 @@
         <div class="login-form__email">
             <input type="text" name="email" value="{{ old('email') }}" placeholder="メールアドレス">
         </div>
+        <div class="login-form__error">
+            @error('email')
+                <span>※</span>
+                {{ $message }}
+            @enderror
+        </div>
         <div class="login-form__password">
             <input type="password" name="password" placeholder="パスワード">
+        </div>
+        <div class="login-form__error">
+            @error('password')
+                <span>※</span>
+                {{ $message }}
+            @enderror
         </div>
         <div class="login-form__button">
             <button>ログイン</button>

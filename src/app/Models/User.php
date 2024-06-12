@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -45,4 +45,16 @@ class User extends Authenticatable
     public function job(){
         return $this->hasMany(Job::class);
     }
+
+    public function scopeUserSearch($query, $user_id){
+        if(!empty($user_id)){
+            $query->where('id', $user_id);
+        }
+    }
+
+    public function sendEmailVerificationNotification()
+    {
+        $this->notify(new \App\Notifications\VerifyEmailJapanese);
+    }
+
 }

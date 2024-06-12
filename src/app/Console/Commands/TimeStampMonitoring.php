@@ -40,7 +40,7 @@ class TimeStampMonitoring extends Command
      */
     public function handle()
     {
-        $date= explode(' ',new Carbon('today', 'Asia/Tokyo'))[0];
+        $date= explode(' ',new Carbon('yesterday', 'Asia/Tokyo'))[0];
         // yesterdayに修正（test中のためtoday）↑
         $jobs=Job::query()->DateSearch($date)->get();
         foreach($jobs as $job){
@@ -49,6 +49,7 @@ class TimeStampMonitoring extends Command
 
                 if(isset($rest) && $rest['status']){
                     $end_rest['status']=0;
+                    $end_rest['end_rest']=new Carbon($date.' 23:59:59');
                     Rest::query()->RestSearch($rest['id'])->update($end_rest);
                 }
                 $end['user_id']=$job['user_id'];

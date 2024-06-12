@@ -98,19 +98,21 @@
 .paginationWrap tr.pagination td a {
     display: block;
     text-decoration: none;
-    width: 105%;
-    height: 107%;
-    padding: 4px 13px;
+    width: 40px;
+    height: 30px;
+    padding: 5px;
     color: #2484cf;
 }
 
 .paginationWrap tr.pagination td a.active {
     background-color: #2484cf;
     color: white;
+    width: 40px;
+    padding: 5px;
 }
 
 .pagination-transition{
-    font-size: 7px;
+    font-size: 12px;
 }
 
 /* ↑ paginationのスタイル ↑ */

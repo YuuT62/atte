@@ -40,8 +40,8 @@ class JobController extends Controller
         return redirect('/');
     }
 
-    public function attendance(){
-        return view('attendance');
+    public function verify(){
+        return view('verify-email');
     }
 
 }
