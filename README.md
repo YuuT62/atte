@@ -5,6 +5,7 @@
 git clone git@github.com:YuuT62/atte.git
 cd atte/
 docker-compose up -d --build
+
 *MySQLは、OSによって起動しない場合があるので、それぞれのPCに合わせてdocker-compose.ymlファイルを編集してください。
 
 ##Laravel環境構築
