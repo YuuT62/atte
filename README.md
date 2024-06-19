@@ -69,11 +69,14 @@ sudo chmod -R 777 src/*
 
 #AWSのURL
 
-開発・検証環境：
+開発・検証環境：http://ec2-35-78-115-12.ap-northeast-1.compute.amazonaws.com
+
 　テストユーザーのアカウント情報
+ 
  　・メールアドレス：test@example.com
+  
    ・パスワード：P@ssw0rd
 
-本番環境：
+本番環境：http://ec2-18-183-158-31.ap-northeast-1.compute.amazonaws.com
 
 
