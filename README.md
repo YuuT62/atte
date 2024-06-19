@@ -45,6 +45,7 @@ php artisan db:seed
 ・ MySQL 8.0.26
 
 ##ER図
+
 ![atte](https://github.com/YuuT62/atte/assets/57668081/da2c3b88-5ef6-402a-b558-fa238789db1b)
 
 
