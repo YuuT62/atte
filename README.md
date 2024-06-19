@@ -37,11 +37,12 @@ php artisan migrate
 php artisan db:seed
 
 ##mysql
-アクセスURL：http://localhost:8080/
+
+　アクセスURL：http://localhost:8080/
 
 ##MailCatcher
 
-アクセスURL：http://localhost:1080/
+　アクセスURL：http://localhost:1080/
 
 　※テスト用のメール受取ボックス（新規ユーザー作成時の認証メールが上記URL先のメールボックスで受け取られます）
 
