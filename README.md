@@ -6,7 +6,7 @@
 
 ##作成した目的
 
-人事評価のため
+人事評価のため（実践学習ターム）
 
 #アプリケーションのURL
 
@@ -16,7 +16,7 @@
  
  　・メールアドレス：test@example.com
   
-   ・パスワード：P@ssw0rd
+   　・パスワード：P@ssw0rd
 
 本番環境：http://ec2-18-183-158-31.ap-northeast-1.compute.amazonaws.com
 
