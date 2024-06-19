@@ -36,6 +36,15 @@ php artisan migrate
 
 php artisan db:seed
 
+##mysql
+アクセスURL：http://localhost:8080/
+
+##MailCatcher
+
+アクセスURL：http://localhost:1080/
+
+　※テスト用のメール受取ボックス（新規ユーザー作成時の認証メールが上記URL先のメールボックスで受け取られます）
+
 ##使用技術
 
 ・ PHP 7.4.9
@@ -80,5 +89,7 @@ sudo chmod -R 777 src/*
    ・パスワード：P@ssw0rd
 
 本番環境：http://ec2-18-183-158-31.ap-northeast-1.compute.amazonaws.com
+
+※AWS上のメール認証機能は「Amazon Simple Email Service」を使用しており、本稼働アクセスのリクエスト未実施（サンドボックス状態）のため、認証されたメールアドレス以外は登録できない状態です。
 
 
