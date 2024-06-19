@@ -28,7 +28,7 @@ composer install
 
 　32行目)　MAIL_HOST=mailcatcher
 
-  37行目)　MAIL_FROM_ADDRESS=hoge@example.com
+  　37行目)　MAIL_FROM_ADDRESS=hoge@example.com
 
 php artisan key:generate
 
@@ -46,6 +46,7 @@ php artisan db:seed
 
 ##ER図
 ![atte](https://github.com/YuuT62/atte/assets/57668081/da2c3b88-5ef6-402a-b558-fa238789db1b)
+
 
 ##URL
 
