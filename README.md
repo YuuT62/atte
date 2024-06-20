@@ -12,12 +12,6 @@
 
 開発・検証環境：http://ec2-35-78-115-12.ap-northeast-1.compute.amazonaws.com
 
-　テストユーザーのアカウント情報
- 
- 　・メールアドレス：test@example.com
-  
-   　・パスワード：P@ssw0rd
-
 本番環境：http://ec2-18-183-158-31.ap-northeast-1.compute.amazonaws.com
 
 ※メール認証機能はAWSの「Amazon Simple Email Service」を使用しており、本稼働アクセスのリクエスト未実施（サンドボックス状態）のため、認証されたメールアドレス以外は登録できない状態です。
